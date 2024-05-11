@@ -1,19 +1,19 @@
 const express = require('express');
 const connectDB = require('./database');
-const invoiceRoutes = require('./routes/invoiceRoutes'); // Adjust the path to your routes file as necessary
+const invoicesRoutes = require('./routes/invoiceRoutes');
+const clientsRoutes = require('./routes/clientsRoutes');
 var cors = require("cors");
 
 connectDB();
 const app = express();
 
 // only allow cors from localhost port 5173 (frontend)
-app.use(cors({
-    origin: 'http://localhost:5173'
-  }));
+app.use(cors());
 app.use(express.json()); // Middleware to parse JSON bodies
 
 // Use your routes
-app.use('/api', invoiceRoutes);
+app.use('/api', invoicesRoutes);
+app.use('/api', clientsRoutes);
 
 const port = 3000;
 app.listen(port, () => {

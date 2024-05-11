@@ -1,2 +1,21 @@
 @import './base.css';
 
+.active-link {
+  background-color: #fdf2f8;
+  position: relative;
+  border-radius: 0.5rem; 
+  overflow: hidden; 
+}
+
+.active-link::before {
+  content: '';
+  position: absolute;
+  left: -0.1rem;
+  top: 0rem; 
+  bottom: 0rem; 
+  width: 6px;
+  background-color: hsl(335, 87%, 53%); 
+  border-top-left-radius: 0.375rem; 
+  border-bottom-left-radius: 0.375rem; 
+  z-index: 0; 
+}
