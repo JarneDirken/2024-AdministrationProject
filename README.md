@@ -5,7 +5,7 @@ A administration project with Vue as front-end and node with express.js as backe
 
 ## 🍿 Demo
 
-If you are not interested with all the technical details of our application you can try it out yourself by going to [the website](https://2024-internship-assignment.vercel.app/)
+If you are not interested with all the technical details of our application you can try it out yourself by going to [the website](https://2024-administration-project.vercel.app/)
 
 - Demo user: username: `test1` password: `test1`
 
